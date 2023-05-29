@@ -21,7 +21,6 @@ public class WspConfig {
 
         System.out.println("WspConfig.wsp()");
         Whatsapp w = Whatsapp.webBuilder()
-                .serializer(new DefaultControllerSerializer(Path.of("C:\\Users\\Joaquin\\Desktop\\whatsapp4j")))
                 .lastConnection()
                 .errorHandler(ErrorHandler.toTerminal())
                 .build()
